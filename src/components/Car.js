@@ -1,12 +1,20 @@
 import '../App.css';
+import { useState } from 'react';
 
 const Car = () => {
+   const [colour, setColour] = useState("deepskyblue");
+   function displayColour(e) {
+      const inputcolour = e.target.value;
+      setColour(inputcolour);
+   }
+
  return (
     <>
-        <div className="car"></div>
-        <div className="car_carBody"></div>
-        <div className="car_wheel_front"></div>
-         <div className="car_wheel_back"></div>
+       <input type="text" placeholder="change car colour" onChange={displayColour} ></input>
+       <div className="car" style={{ backgroundColor: colour }}></div>
+       <div className="car_carBody" style={{ backgroundColor: colour }}></div>
+       <div className="car_wheel_front"></div>
+       <div className="car_wheel_back"></div>
     </>
  );
 }

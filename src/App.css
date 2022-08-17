@@ -7,20 +7,29 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 /*=====================================*/
+input {
+  padding: 5px;
+  margin: 5px;
+  box-sizing: border-box;
+  font-size: large;
+  border-radius: 5px;
+  border: none;
+}
 .car {
   position: relative;
   margin-top: 50px;
   margin-left: 300px;
   height: 125px;
   width: 300px;
-  background-color:deepskyblue;
+  /* background-color:deepskyblue; */
+  background-color: white;
 }
 .car_carBody {
     position: absolute;
     margin-left: 150px;
     height: 100px;
     width: 600px;
-    background-color: deepskyblue;
+    background-color: white;
 }
 .car_wheel_back {
   position: absolute;
