@@ -1,6 +1,5 @@
-import Car from './components/Car';
 import './App.css';
-// import Factory from './components/Factory';
+import Factory from './components/Factory';
 
 function App() {
   return (
@@ -10,8 +9,7 @@ function App() {
           car factory
         </p>
       </header>
-      {/* <Factory></Factory> */}
-      <Car></Car>
+      <Factory></Factory>
     </div>
   );
 }
